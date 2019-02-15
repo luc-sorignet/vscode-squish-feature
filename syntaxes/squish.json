@@ -1,0 +1,33 @@
+{
+    "name": "Squish feature",
+    "comment": "Based on Squish lang",
+    "scopeName": "source.feature",
+    "fileTypes": [
+        "feature"
+    ],
+    "categories": [
+        "Programming Languages",
+        "Linters"
+    ],
+    "activationEvents": [
+        "onLanguage:squish"
+    ],
+    "patterns": [{
+            "match": "(?:Fonctionnalité|Contexte|Scénario|Plan du Scénario|Exemples):",
+            "name": "keyword.feature"
+        },
+        {
+            "match": "(?:Et|Soit|Alors|Lorsque|Lorsque l')",
+            "name": "support.function.feature"
+        },
+        {
+            "match": "#.*",
+            "name": "comment.line.number-sign"
+        },
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+	"name": "squish",
+	"displayName": "Squish feature",
+	"description": "Squish feature support for Visual Studio Code",
+	"icon": "images/squish.png",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": ">=0.9.0-pre.1"
+	},
+	"publisher": "luc-sorignet",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/luc-sorignet/vscode-squish-feature.git"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "squish",
+				"aliases": [
+					"Squish",
+					"squish"
+				],
+				"extensions": [
+					".feature"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "squish",
+				"scopeName": "source.feature",
+				"path": "./syntaxes/squish.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "a4100e49-791e-4fa0-abd1-13500749b087",
+		"publisherId": "59096612-065a-48b4-9973-8ddf4ddef5cd",
+		"publisherDisplayName": "Luc SORIGNET"
+	}
+}
